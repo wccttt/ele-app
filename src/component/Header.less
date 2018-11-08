@@ -1,0 +1,67 @@
+/*位置导航条*/
+@BG:#17a5fe;
+@C:white;
+@Search:#bab7b1;
+.headerBox{
+  background: @BG;
+  padding:.3rem .18rem .1rem .18rem;
+  .headerInner{
+    margin: 0 auto;
+    position: relative;
+    .icon-weizhi{
+      float: left;
+      margin-top: .05rem;
+      color: @C;
+      font-size: .3rem;
+    }
+    .location{
+      display: inline-block;
+      width: 3rem;
+      font-size: .28rem;
+      font-weight: bold;
+      color: @C;
+      transform: scaleX(1.1)scaleY(1.1);
+
+      margin-left: .2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+    }
+    .arrowDown{
+      position: absolute;
+      top: 50%;margin-top: -.1rem;
+      width:0;
+      height: 0;
+      border-left: .1rem solid transparent;
+      border-right: .1rem solid transparent;
+      border-top: .2rem solid @C;
+    }
+  }
+}
+
+
+.searchBox{
+  background: @BG;
+  padding: .18rem;
+  .searchInner{
+    margin-left: .06rem;
+    width: 5.8rem;
+    height: .6rem;
+    background: @C;
+    text-align: center;
+    line-height: .6rem;
+    font-size: .26rem;
+    color: @Search;
+    .icon-fangdajing{
+      font-size: .3rem;
+      margin-right: .05rem;
+
+    }
+    .searchText{
+
+    }
+  }
+
+}
+

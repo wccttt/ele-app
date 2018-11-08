@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,maximum-scale=1.0,minimum-scale=1.0,width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>饿了么APP</title>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_607140_qnslnuy6y8wzsemi.css
+">
+  </head>
+  <body>
+  <script>
+    ~function () {
+       function computed() {
+           var oHTML=document.documentElement,
+               winW=oHTML.clientWidth,
+               desW=640;
+           if(winW>=desW){
+                return;
+           }
+           oHTML.style.fontSize=winW/desW*100+'px';
+       /*解决移动端布局宽屏的问题*/
+       }
+       computed();
+       window.addEventListener('resize',computed,false)
+    }()
+  </script>
+    <div id="root"></div>
+  </body>
+</html>

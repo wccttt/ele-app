@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_607140_79fv2437bkkgwrk9.css">
+    <style>
+        .icon-fanhui{
+            display: block;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            color: #000;
+            border: 1px solid red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+
+        }
+span{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    display: block;
+}
+    </style>
+
+</head>
+<body>
+<div class="box">
+
+</div>
+<i class="iconfont icon-fanhui">
+
+</i>
+<span>dwweqweqweqweewqewqeqweqeeqweqweqweqeeqweqeqqweqweqweqweqw
+</span>
+</body>
+</html>
+<script>
+    var name='guy';
+    function A() {
+        var name='yep';
+        this.name="World";
+        console.log(name);
+    }
+    function say() {
+        if(typeof name==='undefined'){
+            var name='xng';
+            console.log('Goodbye'+this.name);
+        }else{
+            console.log('Hello'+name);
+        }
+    }
+    A.prototype.say=say;
+    var a=new A();
+    a.say();
+   
+</script>

@@ -1,0 +1,36 @@
+@H:2rem;
+.bannerBox{
+  position: relative;
+  height: @H;
+  overflow: hidden;
+  background: #1eaaff;
+
+  div{
+    height: @H;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+    }
+  }
+  .focus{
+    position: absolute;
+    left: 50%;
+    bottom: .15rem;
+    transform: translate(-10%);
+    li{
+      float: left;
+      width: .16rem;
+      height: .16rem;
+      border-radius: 50%;
+      margin-right: 0.1rem;
+      transform: translate(-100%);
+      background: #f4f4f4;
+      &.active{
+        background: #ffc847;
+      }
+    }
+  }
+
+}
